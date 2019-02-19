@@ -357,15 +357,14 @@
 								<img class="imgm img-thumbnail" alt="" src="{$employee->getImage()}" width="60" height="60" />
 							</span>
 						</li>
-						<li class="text-left text-nowrap username" data-mobile="true" data-from="employee_links" data-target="menu">Welcome back {$employee->firstname}</li>
+						<li class="text-left text-nowrap username" data-mobile="true" data-from="employee_links" data-target="menu">{l s='Welcome back' d='Admin.Navigation.Header'} {$employee->firstname}</li>
 						<li class="employee-wrapper-profile"><a class="admin-link" href="{$link->getAdminLink('AdminEmployees', true, [], ['id_employee' => $employee->id|intval, 'updateemployee' => 1])|escape:'html':'UTF-8'}"><i class="material-icons">settings</i> {l s='Your profile' d='Admin.Navigation.Header'}</a></li>
-						
 						<li class="divider"></li>
-						<li><a href=""><i class="material-icons">book</i> Resources</a></li>
-						<li><a href=""><i class="material-icons">school</i> Training</a></li>
-						<li><a href=""><i class="material-icons">person_pin_circle</i> Find an Expert</a></li>
-						<li><a href=""><i class="material-icons">extension</i> Prestashop MarketPlace</a></li>
-						<li><a href=""><i class="material-icons">help</i> Help Center</a></li>
+						<li><a href=""><i class="material-icons">book</i> {l s='Resources' d='Admin.Navigation.Header'}</a></li>
+						<li><a href=""><i class="material-icons">school</i> {l s='Training' d='Admin.Navigation.Header'}</a></li>
+						<li><a href=""><i class="material-icons">person_pin_circle</i> {l s='Find an Expert' d='Admin.Navigation.Header'}</a></li>
+						<li><a href=""><i class="material-icons">extension</i> {l s='Prestashop MarketPlace' d='Admin.Navigation.Header'}</a></li>
+						<li><a href=""><i class="material-icons">help</i> {l s='Help Center' d='Admin.Navigation.Header'}</a></li>
 						{if $host_mode}
 							<li><a href="https://www.prestashop.com/cloud/" class="_blank"><i class="material-icons">settings_applications</i> {l s='My PrestaShop account' d='Admin.Navigation.Header'}</a></li>
 						{/if}

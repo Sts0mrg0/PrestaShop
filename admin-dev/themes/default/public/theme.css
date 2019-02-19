@@ -7918,13 +7918,6 @@ body.display-modal #content, body.display-modal #main {
             font-size: 1.3em;
             color: #00aff0; } }
 
-/*      #header_infos #header_employee_box #employee_infos #employee_links .employee-wrapper{
-        list-style-type: none;
-        margin: 20px 0;
-        padding: 0; }
-        #header_infos #header_employee_box #employee_infos #employee_links .employee-wrapper li{
-        margin: 0;
-        padding: 0; }*/
       #header_infos #header_employee_box #employee_infos #employee_links .employee-wrapper-avatar{ 
         float:left;
         margin: 0 20px; }
@@ -7955,7 +7948,8 @@ body.display-modal #content, body.display-modal #main {
           #header_infos #header_employee_box #employee_infos .dropdown-menu li.divider {
             border: 1px solid #eeeeee;
             clear: both;
-            padding: 0 10px; }
+            width: 90%;
+            margin: 0 auto !important }
             #header_infos #header_employee_box #employee_infos .dropdown-menu li.signout a{
               color: #6C868E
             }
@@ -8088,7 +8082,7 @@ body.display-modal #content, body.display-modal #main {
 #employee_infos .material-icons {
   color: #6c868e;
   font-size: 22px;
-  vertical-align: middle; }
+  vertical-align: bottom; }
 
 #notification #total_notif_number_wrapper,
 #employee_infos #total_notif_number_wrapper {
